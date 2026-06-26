@@ -1,0 +1,15 @@
+Exercise 1: Logging Error Messages and Warning Levels
+
+Objective:
+To implement logging in a Java application using the SLF4J framework.
+
+Description:
+The application creates a logger object using LoggerFactory. It records a warning message to indicate a potential issue and an error message to represent a serious problem during execution.
+
+Observations:
+- WARN level is used for situations that require attention but do not stop the program.
+- ERROR level is used for critical issues that may affect the application's functionality.
+- SLF4J provides a simple and flexible logging interface that works with different logging implementations.
+
+Result:
+The application successfully displayed warning and error log messages using SLF4J.
