@@ -2,6 +2,10 @@ package com.example;
 
 public class MathOperations {
 
+    public int add(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
+    }
+
     public int square(int number) {
         return number * number;
     }
