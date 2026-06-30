@@ -1,1 +1,3 @@
 this module contains the work done for both ex1 and ex2 since both of them are similar in terms of the procedure and only slight modifications exists amongst them.
+
+this contains the code for the exercises of 1 and 2 combined.
