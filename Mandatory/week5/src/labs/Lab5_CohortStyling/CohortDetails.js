@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./CohortDetails.module.css";
 
-// LAB 5: Cognizant Academy Cohort Dashboard
-// Objective: Style components using CSS Modules + conditional inline style
+
 function CohortDetails({ name, status, startDate, endDate }) {
-  // green when "ongoing", blue for everything else
+
   const headingColor = status.toLowerCase() === "ongoing" ? "green" : "blue";
 
   return (
