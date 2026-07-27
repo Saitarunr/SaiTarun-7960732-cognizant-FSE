@@ -1,8 +1,6 @@
 import React from "react";
 import CalculateScore from "./Components/CalculateScore";
 
-// LAB 3: scorecalculatorapp
-// Objective: Create a function component, apply styles, render it
 function Lab3_ScoreCalculator() {
   return (
     <div>
