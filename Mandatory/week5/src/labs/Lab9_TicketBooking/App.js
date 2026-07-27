@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-// LAB 9: ticketbookingapp
-// Objective: Conditional rendering - Guest page vs User page
+
 
 function FlightList() {
   const flights = [
