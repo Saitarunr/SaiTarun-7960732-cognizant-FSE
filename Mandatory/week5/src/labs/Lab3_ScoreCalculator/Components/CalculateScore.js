@@ -1,9 +1,6 @@
 import React from "react";
 import "../Stylesheets/mystyle.css";
 
-// Function Component
-// Accepts Name, School, Total and Goal (number of subjects) as props
-// and calculates + displays the average score
 function CalculateScore(props) {
   const { name, school, total, goal } = props;
   const average = (total / goal).toFixed(2);
