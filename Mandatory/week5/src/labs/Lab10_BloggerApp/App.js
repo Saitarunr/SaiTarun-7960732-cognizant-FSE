@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-
-// LAB 10: bloggerapp
-// Objective: Demonstrate as many conditional rendering techniques as possible
-
-// Technique 1: if / else inside a regular function, returning different elements
 function BookDetails({ available }) {
   if (available) {
     return <p>Book Details: "React in Action" is available in the library.</p>;
@@ -12,7 +7,6 @@ function BookDetails({ available }) {
   }
 }
 
-// Technique 2: Element variables (assign JSX to a variable, then render it)
 function BlogDetails({ published }) {
   let content;
   if (published) {
@@ -23,7 +17,6 @@ function BlogDetails({ published }) {
   return <div>{content}</div>;
 }
 
-// Technique 3: Ternary operator inline in JSX
 function CourseDetails({ enrolled }) {
   return (
     <div>
@@ -36,12 +29,12 @@ function CourseDetails({ enrolled }) {
   );
 }
 
-// Technique 4: Logical && operator (renders only when the condition is true)
+
 function Notification({ hasNewMessage }) {
   return <div>{hasNewMessage && <p>🔔 You have a new message!</p>}</div>;
 }
 
-// Technique 5: Preventing a component from rendering at all by returning null
+
 function Banner({ show }) {
   if (!show) {
     return null;
