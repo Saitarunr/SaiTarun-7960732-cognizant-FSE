@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-// LAB 8: eventexamplesapp - CurrencyConvertor
-// Objective: Handle form submit / button click events
 const RUPEE_TO_EURO_RATE = 0.011; // approximate conversion rate
 
 class CurrencyConvertor extends Component {
