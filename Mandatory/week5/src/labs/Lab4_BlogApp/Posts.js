@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import Post from "./Post";
-
-// LAB 4: blogapp
-// Objective: componentDidMount() and componentDidCatch() lifecycle hooks
 class Posts extends Component {
   constructor(props) {
     super(props);
@@ -12,12 +9,11 @@ class Posts extends Component {
     };
   }
 
-  // Fetches posts from the API and stores them in state
   loadPosts = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((data) => {
-        // Only keep the first 5 posts for a cleaner demo, wrap in the Post class
+     
         const posts = data
           .slice(0, 5)
           .map((item) => new Post(item.id, item.title, item.body));
@@ -28,12 +24,10 @@ class Posts extends Component {
       });
   };
 
-  // Lifecycle hook: runs once after the component is first rendered
   componentDidMount() {
     this.loadPosts();
   }
 
-  // Lifecycle hook: catches errors anywhere in this component's child tree
   componentDidCatch(error, info) {
     this.setState({ hasError: true });
     alert("Something went wrong while rendering posts: " + error.toString());
