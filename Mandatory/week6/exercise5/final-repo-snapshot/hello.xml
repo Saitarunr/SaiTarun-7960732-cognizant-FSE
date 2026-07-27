@@ -1,0 +1,5 @@
+<config>
+  <version>3.0</version>
+  <masterNote>Updated directly on master</masterNote>
+  <branchNote>Updated on GitWork branch</branchNote>
+</config>
