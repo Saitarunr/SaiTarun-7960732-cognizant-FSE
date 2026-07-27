@@ -1,7 +1,5 @@
 import React from "react";
 
-// LAB 6: cricketapp - ListofPlayers
-// Objective: Use map() and arrow functions (ES6)
 function ListofPlayers() {
   const players = [
     { name: "Rohit Sharma", score: 85 },
